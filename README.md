@@ -1,5 +1,7 @@
 # Simualação de uma Memória Virtual 🧠
 
+<img width="34%" src="https://www.univercidade.net/wp-content/uploads/2015/09/7778605624_amnesie.gif">
+
 ## Resumo
 Este projeto foi feito para um trabalho na disciplina de Sistemas Operacionais.
 O objetivo dele é gerar como resposta um arquivo texto contendo na primeira linha o número total de cópias de páginas realizadas da memória virtual para a memória principal, e na segunda linha deverá listar em ordem crescente todas as páginas que estavam presentes na memória ao final da simulação, separadas por espaço.
