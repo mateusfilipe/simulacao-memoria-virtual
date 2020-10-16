@@ -37,10 +37,6 @@ public class main {
 			n = Integer.parseInt(primeiraLinha[1]);
 			p = Integer.parseInt(primeiraLinha[2]);
 			tam = n/p;
-					
-			System.out.println("m: "+m);
-			System.out.println("n: "+n);
-			System.out.println("p: "+p);
 			
 			//Fila para armazenar os valores;	
 			Fila fila = new Fila();
@@ -68,21 +64,13 @@ public class main {
 	        		copias++; // Contabilizando trocas feitas 
 	        	}
 	        }
-	        
-			System.out.println("Endereços de Memória:");
-			System.out.println(fila.Imprimir());
-			System.out.println("Cópias: "+copias);
-			
+	        		
 			int []vetOrdenado = new int [tam];
 			for(int i = 0; i < tam ; i++) {
 				vetOrdenado[i] = fila.Remover();
 			}
 			
 			Arrays.sort(vetOrdenado);//Ordenando o vetor com os processos
-			
-			for(int i = 0; i < tam ; i++) {
-				System.out.println(vetOrdenado[i]);
-			}
 			
 			FileWriter fw = new FileWriter( "saida.txt" );
 			BufferedWriter bw = new BufferedWriter( fw );
