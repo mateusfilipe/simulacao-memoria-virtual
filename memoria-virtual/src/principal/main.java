@@ -1,7 +1,10 @@
 package principal;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -55,7 +58,9 @@ public class main {
                 linha = lerArq.readLine();
 
             }
-	        
+	        arq.close();
+			lerArq.close();
+
 	        for(int i = tam; i < nLinhas; i++) {
 	        	if(!fila.HasElement(vetProcessos[i])) { // Verificando se tem o valor para executar ou não a troca
 	        		fila.Inserir(vetProcessos[i]); // Inserido valor mais novo na fila;
@@ -78,6 +83,18 @@ public class main {
 			for(int i = 0; i < tam ; i++) {
 				System.out.println(vetOrdenado[i]);
 			}
+			
+			FileWriter fw = new FileWriter( "saida.txt" );
+			BufferedWriter bw = new BufferedWriter( fw );
+			bw.write(copias+"");
+			bw.newLine();
+			for(int i = 0 ; i < tam ; i++) {
+				bw.write(vetOrdenado[i]+" ");
+			}
+			bw.close();
+			fw.close();
+
+			
 		}
 		catch(IOException e) {
 			System.err.printf("Não foi possível abrir o arquivo.\n"+e.getMessage());
