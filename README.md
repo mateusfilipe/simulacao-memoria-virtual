@@ -11,10 +11,6 @@ O objetivo dele é gerar como resposta um arquivo texto contendo na primeira lin
 - Pacote: Principal
 
   - <b>main.java</b>: Arquivo principal com a leitura e a chamada das funções a serem desenvolvidas.
-- Pacote: Pilha
-  - <b>Bloco.java</b>: Bloco que armazena os elementos de uma pilha;
-  - <b>PilhaTAD.java</b>: Interfaçe para a pilha;
-  - <b>Pilha.java</b>: Implementação dos métodos da pilha.
 - Pacote: Fila
   - <b>Node.java</b>: Nó da fila com os dados dos elementos;
   - <b>FilaTAD.java</b>: Interface para a fila;
