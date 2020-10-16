@@ -11,4 +11,7 @@ public interface FilaTAD {
 	public void Esvaziar();
 	
 	public String Imprimir();
+	
+	public boolean HasElement(int e);
+	
 }
