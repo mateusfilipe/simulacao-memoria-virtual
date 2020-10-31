@@ -1,4 +1,4 @@
-# Simualação de uma Memória Virtual 🧠
+# Simulação de uma Memória Virtual 🧠
 
 <img width="34%" src="https://www.univercidade.net/wp-content/uploads/2015/09/7778605624_amnesie.gif">
 
